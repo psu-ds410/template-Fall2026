@@ -1,21 +1,24 @@
 # Warning
-* **Github classroom behaves differently than Github. If you don't read these instructions, you will mess up your repository 💯% guaranteed, no matter how well you know git.** It will take more time to fix the mess than to read the instructions below.
+* **We will be using custom github repositories for this class. If you don't read these instructions, you will mess up your repository 💯% guaranteed, no matter how well you know git.** It will take more time to fix the mess than to read the instructions below.
 
 # What is inside?
 * This file explains how to get your own private repository from CMPSC/DS 410. You will use it to get your assignments and submit your work.
 * A quick guide to the basics of working with git on the command line.
 
-# Step 0: Access Tokens
 
-Github does not allow password authentication from the command line. Instead, you will need to use an access token in place of a password. To learn how to make one, go here: https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token . For easiest results, use the _classic_ token and click the "repo" box (make sure to set expiration date after the semester and final are over). More adventurous students can try the (better) fine-grained token. For fine-grained tokens, choose "only select repositories" and select your github classroom repository (see below), then in "Permissions" find "Contents" and select "read and write" access.
+# Step 0: Fill out the github signup form on the course accounts page on canvas.
+* It will take a day or two for your repository to be created.
+* After it is created, you will receive a github join email.
+* **If you are signed into github**, you can access your repository at https://github.com/psu-ds410/ds410fall2026-[insert-your-psu-username-no-square-brackets] 
 
-# Step 1: Create your google classroom assignment repository:
-Sign into github. Then go to the join link on Canvas (Course Accounts page).  Use your psu email address to join.
+# Step 1: Access Tokens
+
+Github does not allow password authentication from the command line. Instead, you will need to use an access token in place of a password. To learn how to make one, go here: https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token . For easiest results, use the _classic_ token and click the "repo" box (make sure to set expiration date after the semester and final are over). More adventurous students can try the (better) fine-grained token. For fine-grained tokens, choose "only select repositories" and select your course github repository, then in "Permissions" find "Contents" and select "read and write" access.
 
 # Step 2: Do this every time you are asked to clone your repository.
 *  Open up a terminal, connect to our cluster, and navigate to the folder you want to contain your repository.
-*  Type ```git clone https://github.com/psu-ds410/hws-fall2026-[github-username].git ds410hw```
-   *   🤦 alert: do not literally type in "[github-username]" <---- means to put in your actual github user name (no square brackets).
+*  Type ```git clone https://github.com/psu-ds410/ds410fall2026-[psu username].git ds410hw```
+   *   🤦 alert: do not literally type in "[psu username]" <---- means to put in your actual psu user name (no square brackets) like abc123.
    *   Use your **access token**, not your **password** when you are asked to authenticate. If you want to copy/paste, do **not** use ctrl-c. Just right click on your terminal and use the paste option. The token will not appear visibly when you type it or copy/paste it (you will not see stars ******* either).
    *   You will now see a new folder called ds410hw. Congratulations 🎉 you have cloned the repository, but you are not done yet.
    *   Go into the folder (type **cd ds410hw**). Otherwise most git commands will mysteriously not work (ok it is not really a mystery: you are not inside a git repo until you do this step).
@@ -69,7 +72,7 @@ The command is
 
 The instructions at the beginning explained exactly which repository to clone.
 
-**Important:** you can also access your repository on the web: `https://github.com/psu-ds410/hws-fall2026-[your-github-username]` (🤦 alert)
+**Important:** you can also access your repository on the web: `https://github.com/psu-ds410/ds410fall2026-[your-psu-username]` (🤦 alert)
 which is useful because it shows the contents of your remote repository and you can check whether it has what you think it has.
 
 ## Staging files (git status and git add)
